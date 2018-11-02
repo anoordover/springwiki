@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/webjars/simplemde-markdown-editor/1.11.2/dist/simplemde.min.css}">
+    </head>
+    <body>
+        <div class="container">
+            <div th:fragment="header">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/">Spring Wiki</a>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link" th:href="@{/articles/add}">Add Artile</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </body>
+</html>
